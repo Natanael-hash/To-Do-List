@@ -1,14 +1,13 @@
-# gui.py
 import tkinter as tk
 from tkinter import messagebox, ttk
-from task_manager import TaskManager
+from src.task_manager import TaskManager
 
 
 class TaskManagerGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Task Manager")
-        self.root.geometry("500x400")
+        self.root.geometry("800x600")
 
         self.task_manager = TaskManager()
         self.create_widgets()
